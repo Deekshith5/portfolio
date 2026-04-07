@@ -79,12 +79,25 @@ body{
     color:red;
 }
 
-
-
-
-
+\
 .pro span{
     color: rgb(66, 71, 23); 
+}
+
+/*Expere*/
+.head{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 3rem;
+    padding-top: 5rem;
+    border-bottom: .4rem solid #19bfd4bb;
+    color:red;
+}
+.head span{
+    color: rgb(52, 28, 83);
+}
+.head span:hover{
+    color:rgb(255, 27, 27);
 }
 header{
     position:fixed;
