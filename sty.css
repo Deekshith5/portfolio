@@ -11,7 +11,7 @@ html{
     overflow-x: hidden;
 }
 
-/*Right side body*/
+/* Body & Sidebar */
 body{
     background-color: wheat;
     overflow: hidden;
@@ -27,31 +27,28 @@ body{
     border-bottom: .4rem solid #19bfd4bb;
     color:red;
 }
-
 .heading span, .title span, .head span, .pro span{
     color: rgb(45, 24, 71);
 }
-
 .heading span:hover, .title span:hover, .head span:hover, .pro span:hover{
     color: crimson;
 }
 
 /* Header */
 header{
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
     height: 100%;
     width: 35rem;
-    background:orange;
+    background: orange;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     text-align: center;
 }
-
 header .user img{
     height: 13rem;
     width: 13rem;
@@ -59,26 +56,13 @@ header .user img{
     object-fit: cover;
     border: .5rem solid;
 }
-
-header .user img:hover{
-    height: 18rem;
-    width: 18rem;
-}
-
 header .user .nm{
     font-size:2rem;
     color: #fff;
 }
-header .user .nm:hover{
-    font-size: 2.2rem;
-}
 header .user .jb{
     font-size:1.5rem;
     color: #fff;
-}
-
-header .nv{
-    width: 100%;
 }
 header .nv ul{
     list-style: none;
@@ -99,30 +83,26 @@ header .nv ul li a:hover{
     color: black;
 }
 
-/* Details Section */
-.Details .Row{
+/* Sections */
+.Details .Row, .Project .Row, .Experience .Row{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     padding: 2rem 0;
 }
-
-.Details .Row .det{
+.Details .Row .det, .Project .Row .det, .Experience .Row .det2, .Project .Row .det2{
     flex: 1 1 48rem;
     padding: 2rem 1rem;
     padding-left: 8rem;
 }
-
-.Details .Row .det h3{
+.Details .Row .det h3, .Project .Row .det h3, .Experience .Row .det2 h3, .Project .Row .det2 h3{
     font-size: 2rem;
-    color: rgb(12, 14, 19);
+    color: rgb(100, 2, 71);
     padding: 1rem 0;
-    font-weight: normal;
 }
-
-.Details .Row .det h3 span{
-    color:  rgb(55, 86, 170);
+.Details .Row .det h3 span, .Project .Row .det h3 span, .Experience .Row .det2 h3 span{
+    color: #99053e;
 }
 
 /* Table */
@@ -141,7 +121,7 @@ td:hover{
     color: rgb(37, 85, 37);
 }
 th{
-    color: rgb(0, 0, 0);
+    color: #000;
     background:#19bfd4bb;
     font-weight: 1000;
     padding: 2rem;
@@ -168,36 +148,7 @@ table{
     color: rgb(68, 0, 255);
 }
 
-/* Project Section */
-.Project .Row, .Experience .Row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 3rem 0;
-}
-
-.Project .Row .det, .Experience .Row .det, 
-.Project .Row .det2, .Experience .Row .det2{
-    flex: 1 1 48rem;
-    padding: 2rem 1rem;
-    padding-left: 8rem;
-}
-
-.Project .Row .det h3, .Experience .Row .det h3,
-.Project .Row .det2 h3, .Experience .Row .det2 h3{
-    font-size: 2rem;
-    color: rgb(100, 2, 71);
-    padding: 1rem 0;
-    font-weight: normal;
-}
-
-.Project .Row .det h3 span, .Experience .Row .det h3 span,
-.Project .Row .det2 h3 span, .Experience .Row .det2 h3 span{
-    color: #99053e;
-}
-
-/* Horizontal lines */
+/* Horizontal Lines */
 .hline{
     text-align: center;
     margin: 0 6rem;
@@ -206,7 +157,6 @@ table{
     padding-bottom: .5rem;
     border-bottom: .2rem solid #039cb179;
 }
-
 .hline1{
     text-align: center;
     margin: 0 6rem;
